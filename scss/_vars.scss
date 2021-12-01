@@ -5,11 +5,34 @@ $gold: #9d8665;
 $light: #FFFFFF;
 $grey: #999999;
 
+$card-1: #BCBCBC;
+$card-2: #939393;
+
 $fs-1: 80px;
 $fs-2: 32px;
 $fs-3: 28px;
 $fs-4: 22px;
 $fs-5: 18px;
+
+$fs-1-l: 50px;
+$fs-2-l: 28px;
+$fs-3-l: 24px;
+$fs-4-l: 20px;
+$fs-5-l: 16px;
+
+
+$fs-1-m: 40px;
+$fs-2-m: 22px;
+$fs-3-m: 20px;
+$fs-4-m: 18px;
+$fs-5-m: 16px;
+
+$fs-1-s: 28px;
+$fs-2-s: 18px;
+$fs-3-s: 16px;
+$fs-4-s: 14px;
+$fs-5-s: 12px;
+
 
 $title: 'Forum', cursive;
 $text: 'Roboto', sans-serif;
@@ -19,4 +42,9 @@ $text: 'Roboto', sans-serif;
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
-
+.dark-section {
+  background-color: $dark;
+}
+.light-section {
+  background-color: $light;
+}

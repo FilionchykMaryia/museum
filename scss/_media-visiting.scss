@@ -1,0 +1,81 @@
+@media (max-width: 1024px){
+  .visiting-section {
+    padding: 59px 0 0 0;
+    .visiting-wrapper {
+      gap: 35px 107px;
+      padding: 70px 0 36px 0;
+    }
+    .card {
+      max-width: 440px;
+      max-height: 424px;
+      // padding: 103px 0;
+      section {
+        padding: 20px 0;
+        .p-1 {
+          padding: 22px 0 10px 0;
+          font-family: $text;
+          color: $dark;
+          font-weight: 200;
+          font-size: $fs-4-l;
+          line-height: 26px;
+        }
+        .p-2 {
+          font-family: $text;
+          color: $dark;
+          font-weight: 200;
+          font-size: $fs-5-l;
+          line-height: 21px;
+        }
+      }
+      img {
+        width: 330px;
+        height: 215px;
+      }
+    }
+  }
+}
+@media (max-width: 768px){
+  .visiting-section {
+    padding: 40px 0 0 0;
+    .visiting-wrapper {
+      gap: 20px 50px;
+      padding: 63px 0 59px 0;
+    }
+    .card {
+      max-width: 440px;
+      max-height: 424px;
+      // padding: 103px 0;
+      section {
+        padding: 20px 0;
+        .p-1 {
+          padding: 19px 0 7px 0;
+          font-family: $text;
+          color: $dark;
+          font-weight: 200;
+          font-size: $fs-4-m;
+          line-height: 26px;
+        }
+        .p-2 {
+          font-family: $text;
+          color: $dark;
+          font-weight: 200;
+          font-size: $fs-5-m;
+          line-height: 21px;
+        }
+      }
+      img {
+        width: 280px;
+        height: 180px;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px){
+  .visiting-section {
+    padding: 30px 0 0 0;
+    .visiting-wrapper {
+      padding: 50px 0 10px 0;
+    }
+  }
+}

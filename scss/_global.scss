@@ -1,0 +1,263 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+} 
+html, 
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $text;
+  background-color: $dark;
+  margin: 0 auto;
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+button {
+  display: inline-block;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.logo {
+  display: flex;
+  gap: 25px;
+}
+.mask {
+  width: 49px;
+  height: 26px;
+  background-image: url("assets/svg/logo.svg");
+  background-size: cover;
+  &:hover {
+    filter: invert(53%) sepia(51%) saturate(236%) hue-rotate(356deg) brightness(92%) contrast(89%);
+    transition: 0.4s ease-in-out;
+  }
+}
+
+.logo-text {
+  font-family: $title;
+  font-size: 28px;
+  line-height: 31px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: $light;
+}
+
+
+.title-white {
+  font-family: $title;
+  color: $light;
+  font-size: $fs-1;
+  font-weight: normal;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  &:hover {
+    @include text-hover;
+  }
+}
+
+.title-white-und {
+  position: relative;
+  font-family: $title;
+  color: $light;
+  font-weight: normal;
+  font-size: $fs-1;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  &:hover {
+    @include text-hover;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: $red;
+  }
+}
+
+.title-gold {
+  font-family: $title;
+  color: $gold;
+  font-weight: normal;
+  font-size: $fs-1;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  &:hover {
+    @include text-hover;
+  }
+}
+
+.title-gold-und {
+  position: relative;
+  font-family: $title;
+  color: $gold;
+  font-weight: normal;
+  font-size: $fs-1;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  &:hover {
+    @include text-hover;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -29px;
+    left: 4px;
+    right: 0;
+    height: 3px;
+    max-width: 100%;
+    background-color: $red;
+  }
+}
+
+.title-sm-gold-und {
+  position: relative;
+  font-family: $title;
+  color: $gold;
+  font-weight: normal;
+  font-size: $fs-5;
+  line-height: 20px;
+  text-transform: capitalise;
+  width: 100%;
+  &:hover {
+    @include text-hover;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    max-width: 100%;
+    background-color: $red;
+  }
+}
+.title-dark {
+  font-family: $text;
+  font-style: normal;
+  font-weight: normal;
+  font-weight: bold;
+  font-size: $fs-3;
+  line-height: 33px;
+  color: $dark;
+  
+}
+.title-dark-und {
+  position: relative;
+  font-family: $title;
+  color: $dark;
+  font-weight: normal;
+  font-size: $fs-2;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 4px;
+    right: 0;
+    height: 2px;
+    width: 300px;
+    background-color: $red;
+  }
+  &:hover {
+    @include text-hover;
+  }
+  &:hover::after {
+    width: 440px;
+    transition: 0.7s ease;
+  }
+}
+.text-white {
+  font-weight: 300;
+  font-size: $fs-3;
+  color: $light;
+  line-height: 33px;
+  letter-spacing: 2px;
+}
+.text-light{
+  line-height: 38px;
+  font-weight: 300;
+  line-height: 38px;
+  font-size: $fs-4;
+  color: $light;
+}
+.text-dark{
+  line-height: 38px;
+  font-weight: 300;
+  line-height: 38px;
+  font-size: $fs-4;
+  color: $dark;
+}
+.btn-red {
+  width: 360px;
+  height: 75px;
+  padding: 24px 65px;
+  background-color: $red;
+  color: $light;
+  font-size: $fs-4;
+  line-height: 26px;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 10px;
+  &:hover {
+    background-color: $gold;
+  }
+}
+
+.btn-dark {
+  width: 175px;
+  height: 50px;
+  background-color: $dark;
+  color: $light;
+  padding: 0 36px;
+  font-size: $fs-4;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 300;
+  line-height: 50px;
+  &:hover {
+    background-color: $gold;
+  }
+}
+

@@ -1,0 +1,126 @@
+@media (max-width: 1024px) {
+  .header-container {
+    position: relative;
+    height: 130px;
+  }
+  .header-nav {
+    display: none;
+    z-index: 100;
+    width: 100vw;
+    
+  }
+  
+  .burger {
+    display: inline-block;
+    cursor: pointer;
+    position: aboslute;
+    z-index: 100;
+    right: 10px;
+    top: 4px;
+    div{
+        width: 25px;
+        height: 3px;
+        background-color: $light;
+        margin: 5px;
+        display: flex;
+        transition: all 0.3s ease;
+    }
+  }
+  
+  .toggle{
+    .line1{
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .line2{
+        opacity: 0;
+    }
+    .line3{
+        transform: rotate(45deg) translate(-5px, -6px); 
+    }
+  } 
+    
+  .nav-active{
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    top: 110px;
+    background-color: $dark;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    .nav {
+      padding: 10px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      width: 100%;
+      transition: transform 0.8 ease-in-out;
+      z-index: 100;
+    }
+    .nav-item {
+      width: 100%;   
+      position: relative;
+      line-height: 23px;
+      transition: transform 0.8 ease-in-out;
+      z-index: 100;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 12px;
+        top: 6px;
+        left: 180px;
+        height: 12px;
+        background-image: url(../assets/svg/nav-item-arr.svg);
+        background-repeat: no-repeat;
+      }
+      &:hover{
+        @include text-hover;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    height: 112px;
+  }
+}
+
+@media (max-width: 420px) {
+  .header-container {
+    height: 89px;
+    .mask {
+      width: 29px;
+      height: 16px;
+    }
+  }
+  .header-nav {
+    min-width: 320px;
+    top: 89px;
+    .nav {
+      flex-direction: column;
+      gap: 10px;
+      &-item {
+        font-size: $fs-4-m;
+        line-height: 44px;
+        letter-spacing: 2px;
+        &::after {
+          top: 15px;
+        }
+      }
+    }
+    .nav-active{
+      display: flex;
+      flex-direction: row;
+      left: 0;
+      top: 89px;
+      background-color: $dark;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+ 
+      
+    }
+  }
+ 
+}

@@ -18,13 +18,13 @@
         font-size: $fs-4;
         line-height: 26px;
         color: $dark;
+        a {
+          display: inline-block;
+        }
       }
       .map {
         width: 960px;
         height: 620px;
-        background-image: url(../assets/img/map.png);
-        background-repeat: no-repeat;
-        background-size: contain;
       }
     }
     

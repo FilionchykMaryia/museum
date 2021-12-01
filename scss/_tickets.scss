@@ -9,6 +9,12 @@
         justify-content: flex-start;
         gap: 60px;
     }
+    .wr-img {
+      img {
+        width: 720px;
+        height: 550px;
+      }
+    }
     .buy-tickets {
       display: flex;
       flex-direction: row;
@@ -28,7 +34,7 @@
       h5 {
         padding-bottom: 15px;
       }
-      span {
+      .amount-title {
         font-weight: 300;
         font-size: $fs-4;
         line-height: 26px;
@@ -112,7 +118,7 @@
     /* Style the indicator (dot/circle) */
     .radio-btn .checkmark::after {
       top: 25%;
-      left: 23%;
+      left: 25%;
       width: 7px;
       height: 7px;
       border-radius: 50%;
@@ -128,14 +134,16 @@
       align-content: center;
       border: 2px solid $dark;
       text-align: center;
-      input {
-        width: 89px;
+      .number {
+        width: 70px;
+        all: unset;
         font-weight: 300;
         font-size: $fs-4;
         line-height: 26px;
         text-align: center;
       }
       button {
+        width: 21px;
         background-color: $light;
         font-family: $text;
         font-size: $fs-2;
@@ -144,11 +152,7 @@
         color: #000000;
       }
     }
-    .number {
-      all: unset;
-      width: 3em;
-      text-align: center;
-    }
+  
     
   .parallax {
     box-sizing: border-box;
@@ -157,6 +161,7 @@
     background-image: url(../assets/img/parallax.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
   }
 
 }

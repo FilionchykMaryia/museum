@@ -10,11 +10,11 @@
 }
 .header-nav {
   min-width: 830px;
-  ul {
+  .nav {
     display: flex;
     flex-direction: row;
     max-width: 720px;
-    li {
+    &-item {
       list-style-type: none;
       padding-left: 55px;
       color: $light;
@@ -28,4 +28,7 @@
       }
     }
   }
+}
+.burger {
+  display: none;
 }

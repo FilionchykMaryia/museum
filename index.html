@@ -18,28 +18,34 @@
         <div class="mask"></div>
         <div class="logo-text">Louvre</div>
       </div>
+      
       <nav class="header-nav">
-        <ul>
-          <li>
+        <ul class="nav">
+          <li class="nav-item">
             <a href="#visiting">Visiting</a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="#explore">Explore</a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="#video">Video</a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="#gallery">Gallery</a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="#tickets">Tickets</a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="#contacts">Contacts</a>
           </li>
         </ul>
       </nav>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </div>
   </header>
   <main class="main">
@@ -147,9 +153,16 @@
 
             <p class="text-light">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
           </div>
-          <figure>
-            <img src="./assets/img/explore-slider/after.jpg" alt="explore after">
-          </figure>
+
+            <div class="img-comp-container">
+              <div class="img-comp-img">
+                <img src="./assets/img/explore-slider/after.jpg" width="720" height="700" alt="explore after">
+              </div>
+              <div class="img-comp-img img-comp-overlay">
+                <img src="./assets/img/explore-slider/before.jpg" width="720" height="700" alt="explore before">
+              </div>
+            </div> 
+
         </div>
       </section>
 
@@ -161,68 +174,62 @@
           </div>
           <div class="video-slider">
             <div class="video-slider__item">
-              <video src="assets/video/video0.mp4" poster="assets/video/poster0.jpg" controls></video>
-              <div class="play-btn">
-                <img src="./assets/svg/button-bg-play.svg" alt="play">
-              </div>
+              <video class="viewer" src="assets/video/video0.mp4" poster="assets/video/poster0.jpg"></video>
+              <button class="big-play-btn"></button>
               <div class="video-controls">
-                <img class="play-button" src="assets/svg/play.svg" alt="play" >
-                <input class="progress" type="range" value="40" min="0" max="100" step="1" >
-                <img class="volume-button" src="assets/svg/volume.svg" alt="volume" >
-                <input class="progress-vol" type="range" value="40" min="0" max="100" step="1" >
-                <img class="fullscr-button" src="assets/svg/fullscreen.svg" alt="full screen button" >
+                <button class="play-button" title="Toggle play"></button>
+                <input class="progress range" type="range" name="play" value="0" min="0" max="100" step="1">
+                <button class="volume-button"></button>
+                <input class="progress-vol range" type="range" name="volume" value="30" min="0" max="100" step="1">
+                <button class="fullscr-button"></button>
               </div>
             </div>
+
             <div class="video-slider__item">
-              <video src="assets/video/video1.mp4" poster="assets/video/poster1.jpg" controls></video>
-              <div class="play-btn">
-                <img src="./assets/svg/button-bg-play.svg" alt="play">
-              </div>
+              <video class="viewer" src="assets/video/video1.mp4" poster="assets/video/poster1.jpg"></video>
+              <button class="big-play-btn"></button>
               <div class="video-controls">
-                <img class="play-button" src="assets/svg/play.svg" alt="play" >
-                <input class="progress" type="range" value="40" min="0" max="100" step="1" >
-                <img class="volume-button" src="assets/svg/volume.svg" alt="volume" >
-                <input class="progress-vol" type="range" value="40" min="0" max="100" step="1" >
-                <img class="fullscr-button" src="assets/svg/fullscreen.svg" alt="full screen button" >
+                <button class="play-button" title="Toggle play"></button>
+                <input class="progress range" type="range" name="play" value="0" min="0" max="100" step="1">
+                <button class="volume-button"></button>
+                <input class="progress-vol range" type="range" name="volume" value="30" min="0" max="100" step="1">
+                <button class="fullscr-button"></button>
               </div>
             </div>
+
             <div class="video-slider__item">
-              <video src="assets/video/video2.mp4" poster="assets/video/poster2.jpg" controls></video>
-              <div class="play-btn">
-                <img src="./assets/svg/button-bg-play.svg" alt="play">
-              </div>
+              <video class="viewer" src="assets/video/video2.mp4" poster="assets/video/poster2.jpg"></video>
+              <button class="big-play-btn"></button>
               <div class="video-controls">
-                <img class="play-button" src="assets/svg/play.svg" alt="play" >
-                <input class="progress" type="range" value="40" min="0" max="100" step="1" >
-                <img class="volume-button" src="assets/svg/volume.svg" alt="volume" >
-                <input class="progress-vol" type="range" value="40" min="0" max="100" step="1" >
-                <img class="fullscr-button" src="assets/svg/fullscreen.svg" alt="full screen button" >
+                <button class="play-button" title="Toggle play"></button>
+                <input class="progress range" type="range" name="play" value="0" min="0" max="100" step="1">
+                <button class="volume-button"></button>
+                <input class="progress-vol range" type="range" name="volume" value="30" min="0" max="100" step="1">
+                <button class="fullscr-button"></button>
               </div>
             </div>
+
             <div class="video-slider__item">
-              <video src="assets/video/video3.mp4" poster="assets/video/poster3.jpg" controls></video>
-              <div class="play-btn">
-                <img src="./assets/svg/button-bg-play.svg" alt="play">
-              </div>
+              <video class="viewer" src="assets/video/video3.mp4" poster="assets/video/poster3.jpg"></video>
+              <button class="big-play-btn"></button>
               <div class="video-controls">
-                <img class="play-button" src="assets/svg/play.svg" alt="play" >
-                <input class="progress" type="range" value="40" min="0" max="100" step="1" >
-                <img class="volume-button" src="assets/svg/volume.svg" alt="volume" >
-                <input class="progress-vol" type="range" value="40" min="0" max="100" step="1" >
-                <img class="fullscr-button" src="assets/svg/fullscreen.svg" alt="full screen button" >
+                <button class="play-button" title="Toggle play"></button>
+                <input class="progress range" type="range" name="play" value="0" min="0" max="100" step="1">
+                <button class="volume-button"></button>
+                <input class="progress-vol range" type="range" name="volume" value="30" min="0" max="100" step="1">
+                <button class="fullscr-button"></button>
               </div>
             </div>
+
             <div class="video-slider__item">
-              <video src="assets/video/video4.mp4" poster="assets/video/poster4.jpg" controls></video>
-              <div class="play-btn">
-                <img src="./assets/svg/button-bg-play.svg" alt="play">
-              </div>
+              <video class="viewer" src="assets/video/video4.mp4" poster="assets/video/poster4.jpg"></video>
+              <button class="big-play-btn"></button>
               <div class="video-controls">
-                <img class="play-button" src="assets/svg/play.svg" alt="play" >
-                <input class="progress" type="range" value="40" min="0" max="100" step="1" >
-                <img class="volume-button" src="assets/svg/volume.svg" alt="volume" >
-                <input class="progress-vol" type="range" value="40" min="0" max="100" step="1" >
-                <img class="fullscr-button" src="assets/svg/fullscreen.svg" alt="full screen button" >
+                <button class="play-button" title="Toggle play"></button>
+                <input class="progress range" type="range" name="play" value="0" min="0" max="100" step="1">
+                <button class="volume-button"></button>
+                <input class="progress-vol range" type="range" name="volume" value="30" min="0" max="100" step="1">
+                <button class="fullscr-button"></button>
               </div>
             </div>
           </div> 
@@ -263,21 +270,21 @@
           <h2 class="title-gold-und">BUY TICKETS</h2>
           <div class="wrapper">
             <div class="wr-img">
-              <img src="./assets/img/tickets-bg.jpg" alt="" width="720" height="550">
+              <img src="./assets/img/tickets-bg.jpg" alt="" >
             </div>
-            <form class="buy-tickets" name="buy-tickets" method="GET" action="/">
+            <form class="buy-tickets" name="buy-tickets" method="GET" onsubmit="return false;" action="/">
               <div class="wr-ticket">
                 <h5 class="title-dark">Ticket Type</h5>
                 <label class="radio-btn">Permanent exhibition
-                  <input type="radio" checked="checked" name="radio">
+                  <input type="radio" name="radio" id="permanent" checked="checked" value="20">
                   <span class="checkmark"></span>
                 </label>
                 <label class="radio-btn">Temporary exhibition
-                  <input type="radio" name="radio">
+                  <input type="radio" name="radio" id="temporary" value="25">
                   <span class="checkmark"></span>
                 </label>
                 <label class="radio-btn">Combined Admission
-                  <input type="radio" name="radio">
+                  <input type="radio" name="radio" id="combined" value="40">
                   <span class="checkmark"></span>
                 </label>
               </div>
@@ -285,25 +292,25 @@
                 <h5 class="title-dark">Amount</h5>
 
                 <div class="amount-item">
-                  <span>Basic 18+</span>
+                  <span class="amount-title">Basic 18+</span>
                   <div class="input-num">
                     <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                    <input type="number" min="0" max="20" value="1" readonly class="number">
+                    <input type="number" id="basic" min="0" max="20" value="1" readonly class="number">
                     <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
                   </div>
                 </div>
 
                 <div class="amount-item">
-                  <span>Senior 65+</span>
+                  <span class="amount-title">Senior 65+</span>
                   <div class="input-num">
                     <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                    <input type="number" min="0" max="20" value="1" readonly class="number">
+                    <input type="number" id="senior" min="0" max="20" value="1" readonly class="number">
                     <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
                   </div>
                 </div>
               
-                <div class="title-dark space">Total €220</div>
-                <a href="#popup" class="btn-dark ripple">Buy Now</a>
+                <div class="title-dark space">Total €<span class="title-dark space" id="output" data-cash="30">30</span></div>
+                <a href="#popup" id="buy-now-btn" class="btn-dark ripple">Buy Now</a>
               </div>
             </form>
           </div>
@@ -317,12 +324,16 @@
           <div class="wrapper">
             <div class="contacts-item">
               <h5 class="title-dark">Palais Royal Musee du Louvre</h5>
-              <p>address: 75001 Paris, France</p>
-              <p>phone: +33(0) 1 40 20 50 50</p>
-              <p>mail: info@louvre.fr</p>
+              <p>address:75001 Paris, France</p>
+              <p>phone: 
+                <a href="tel:330140205050">+33(0) 1 40 20 50 50</a></p>
+              <p>mail: 
+                <a href="mailto:info@louvre.fr">info@louvre.fr</a></p>
             </div>
             <div class="contacts-item">
-              <div class="map"></div>
+              <div class="map">
+                <iframe width='100%' height='100%' src="https://api.mapbox.com/styles/v1/maryia91/ckulk0tpof36z17o4p6rls8uq.html?title=false&access_token=pk.eyJ1IjoibWFyeWlhOTEiLCJhIjoiY2t1bDhlZHhvMTFkMDJycnY0eWNpc3hzcSJ9.C9jWRn1qKiHjc6ukp9DINw&zoomwheel=false#15.8/48.860974/2.336366" title="Monochrome" style="border:none;"></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -386,78 +397,176 @@
     </div>
   </footer>
   <div id="popup" class="popup">
-    <a href="#tickets" class="popup_area"></a>
-    <div class="popup_body">
-      <div class="popup_content container">
-        <a href="#tickets" class="popup_close"><img src="./assets/svg/close.svg" alt="close"></a>
+    <a href="#tickets" class="popup__area"></a>
+    <div class="popup__body">
+      <div class="popup__content container">
+        <a href="#tickets" class="popup__close"><img src="./assets/svg/close.svg" alt="close"></a>
         <div class="wrapper">
-          <div class="item">
-            <div class="popup_title">
+          <div class="item-1">
+            <div class="popup__title">
               <div class="logo"></div>
               <h6>Booking tickets</h6>
               <p>Tour to Louvre</p>
             </div>
             <form action="/" method="GET" >
-              <div class="input-item">
-                <div><img src="./assets/svg/popup/date.svg" alt="date"></div>
-                <div>Date</div>
-                <div class="field"><input type="date" name="date" id="date"></div>
-                <div class="arrow"><img src="./assets/svg/popup/arrow.svg" alt="arrow"></div>
+              <div class="input-wr">
+                <div class="input-item input-item-date">
+                  <img src="./assets/svg/popup/date.svg" alt="date">
+                  <label for="ticket-date"></label>
+                  <input class="card-input" type="date" id="ticket-date" name="ticket-date" placeholder="Date">
+                  <img class="arr-date" src="./assets/svg/popup/arrow.svg" alt="arrow">
+                </div>
+                <div class="input-item">
+                  <img src="./assets/svg/popup/time.svg" alt="time">
+                  <label for="ticket-time"></label>
+                  <select class="card-input" id="ticket-time" name="ticket-time" placeholder="Time">
+                    <option value="none" hidden>Time</option>
+                    <option class="select-time" value="09 : 00">09 : 00</option>
+                    <option class="select-time" value="09 : 30">09 : 30</option>
+                    <option class="select-time" value="10 : 00">10 : 00</option>
+                    <option class="select-time" value="10 : 30">10 : 30</option>
+                    <option class="select-time" value="11 : 00">11 : 00</option>
+                    <option class="select-time" value="11 : 30">11 : 30</option>
+                    <option class="select-time" value="12 : 00">12 : 00</option>
+                    <option class="select-time" value="12 : 30">12 : 30</option>
+                    <option class="select-time" value="13 : 00">13 : 00</option>
+                    <option class="select-time" value="13 : 30">13 : 30</option>
+                    <option class="select-time" value="14 : 00">14 : 00</option>
+                    <option class="select-time" value="14 : 30">14 : 30</option>
+                    <option class="select-time" value="15 : 00">15 : 00</option>
+                    <option class="select-time" value="15 : 30">15 : 30</option>
+                    <option class="select-time" value="16 : 00">16 : 00</option>
+                    <option class="select-time" value="16 : 30">16 : 30</option>
+                    <option class="select-time" value="17 : 00">17 : 00</option>
+                    <option class="select-time" value="17 : 30">17 : 30</option>
+                    <option class="select-time" value="18 : 00">18 : 00</option>
+                  </select>
+                  <!-- <input class="card-input" type="time" id="ticket-time" name="ticket-time" placeholder="Time"> -->
+                  <img src="./assets/svg/popup/arrow.svg" alt="arrow">
+                </div>
               </div>
-              <div class="input-item">
-                <div><img src="./assets/svg/popup/time.svg" alt="time"></div>
-                <div>Time</div>
-                <div class="field"><input type="time" name="time" id="time"></div>
-                <div class="arrow"><img src="./assets/svg/popup/arrow.svg" alt="arrow"></div>
+
+              <div class="inp-err-wr">
+                <div class="input-item">
+                  <img src="./assets/svg/popup/name.svg" alt="name">
+                  <label for="ticket-name"></label>
+                  <input class="card-input" type="text" id="ticket-name" name="ticket-name" placeholder="Name" minlength="3" maxlength="15" pattern="^[A-Za-zА-Яа-яЁё\s]+$" title="Please enter your name.">
+                  <img src="./assets/svg/popup/arrow.svg" alt="arrow">
+                </div>
+                <span class="err-message err-name"></span>
               </div>
-              <div class="input-item">
-                <div><img src="./assets/svg/popup/name.svg" alt="name"></div>
-                <div>Name</div>
-                <div class="field"><input type="text" name="name" id="name"></div>
+              
+              <div class="inp-err-wr">
+                <div class="input-item">
+                  <img src="./assets/svg/popup/email.svg" alt="email">
+                  <label for="ticket-email"></label>
+                  <input class="card-input" type="text" id="ticket-email" name="ticket-email" placeholder="Email" pattern="[a-z0-9_-]{3,15}[@][a-z]{4,}[\.][a-z]{2,}" title="Please enter your e-mail.">
+                  <img src="./assets/svg/popup/arrow.svg" alt="arrow">
+                </div>
+                <span class="err-message err-email"></span>
               </div>
-              <div class="input-item">
-                <div><img src="./assets/svg/popup/email.svg" alt="email"></div>
-                <div>E-mail</div>
-                <div class="field"><input type="email" name="email" id="email"></div>
+              
+              <div class="inp-err-wr">
+                <div class="input-item">
+                  <img src="./assets/svg/popup/tel.svg" alt="tel">
+                  <label for="ticket-tel"></label>
+                  <input class="card-input" type="text" id="ticket-tel" name="ticket-tel" placeholder="Phone" pattern="\d{1,10}|(\d{2}[-|\s]){1,4}\d{2}|(\d{2,3}[-|\s]){1,3}\d{2}|(\d{2}[-|\s]){2}\d{3}[-|\s]\d{2,3}|\d{2}[-|\s]\d{3}[-|\s]\d{2}[-|\s]\d{2,3}|\d{3}[-|\s](\d{2}[-|\s]){1,2}\d{2,3}|(\d{2}[-|\s]){1,3}\d{2,3}|(\d{2,3}[-|\s]){1,2}\d{2,3}" title="Please enter your phone number.">
+                  <img src="./assets/svg/popup/arrow.svg" alt="arrow">
+                </div>
+                <span class="err-message err-tel"></span>
               </div>
+              
               <div class="input-item">
-                <div><img src="./assets/svg/popup/tel.svg" alt="tel"></div>
-                <div>Phone</div>
-                <div class="field"><input type="tel" name="tel" id="tel"></div>
-              </div>
-              <div class="input-item">
-                <div><img src="./assets/svg/popup/ballot.svg" alt="ticket"></div>
-                <div>Ticket Type</div>
-                <div class="field"><select name="type-ticket" id="type-ticket">
-                  <option value="1"></option>
-                  <option value="2">Basic</option>
-                  <option value="3">Senior</option>
+                <img src="./assets/svg/popup/ballot.svg" alt="type">
+                <div class="card-input"><select name="type-ticket" id="type-ticket">
+                  <option data-cost="20">Permanent exhibition</option>
+                  <option data-cost="25">Temporary exhibition</option>
+                  <option data-cost="40">Combined Admission</option>
                 </select></div>
-                <div><img src="./assets/svg/popup/arrow.svg" alt="arrow"></div>
+                <img src="./assets/svg/popup/arrow.svg" alt="arrow">
               </div>
               <div class="input-item-entry">
                 <h5 class="title-sm-gold-und">Entry ticket</h5>
                 <div class="entry-item">
-                  <div>Basic 18+ (20 €)</div>
-                  <div class="input-num">
+                  <div>Basic 18+ ( <span class="b1">20</span> €)</div>
+                  <div class="input-num inp-num-popup">
                     <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                    <input type="number" min="0" max="20" value="1" readonly class="number">
+                    <input type="number" id="basic-pop" min="0" max="20" value="1" readonly class="number">
                     <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
                   </div>
                 </div>
                 <div class="entry-item">
-                  <div>Senior 65+ (10 €)</div>
-                  <div class="input-num">
+                  <div>Senior 65+ ( <span class="s1">10</span> €)</div>
+                  <div class="input-num inp-num-popup">
                     <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                    <input type="number" min="0" max="20" value="1" readonly class="number">
+                    <input type="number" id="senior-pop" min="0" max="20" value="1" readonly class="number">
                     <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
                   </div>
                 </div>
               </div>
             </form>
           </div>
-          <div class="item">
-            <img src="./assets/Payment.png" alt="Payment">
+          <div class="item-2">
+            <div class="ticket">
+              <div class="ticket-info">
+                <div class="ticket-info__title">Overview</div>
+                <div class="ticket-info__subtitle">Tour to Louvre</div>
+                <p class="ticket-info__date"><span class="date"></span><span id="info-date">Select Date</span></p>
+                <p class="ticket-info__time"><span class="time"></span><span id="info-time">09 : 00</span></p>
+                <p class="ticket-info__type"><span class="type"></span><span id="info-type">Permanent exhibition</span></p>
+              </div>
+              <div class="ticket-img"></div>
+            </div>
+            
+            <div class="ticket-total">
+              <div class="ticket-total__item">
+                <div><span id="basic-sum" data-sum="1" class="black-span">1</span> Basic ( <span class="b2">20</span> €)</div>
+                <div id="output-basic" data-cash="40">40 €</div>
+              </div>
+              <div class="ticket-total__item">
+                <div><span id="senior-sum" data-sum="1" class="black-span">1</span> Senior ( <span class="s2">10</span> €)</div>
+                <div id="output-senior" data-cash="20">20 €</div>
+              </div>
+              <div class="ticket-total__all">
+                <div>Total:</div>
+                <div id="output-total" data-cash="60"><b>60 €</b></div>
+              </div>
+            </div>
+
+            <form class="book" action="/" method="GET">
+              <div class="card-1">
+                <div>
+                  <label for="card_num">Card number</label>
+                  <input class="card-input" type="text" id="card_num" name="card_num">
+                </div>
+                <div class="card-date">
+                  <div>
+                    <label for="card_month">Expiration date</label>
+                    <input class="card-input" type="number" id="card_month" name="card_month" value="03">
+                  </div>
+                  <div>
+                    <label for="card_year">&nbsp;&nbsp;&nbsp;</label>
+                    <input class="card-input" type="number" id="card_year" name="card_year" value="2024">
+                  </div> 
+                </div>
+                <div>
+                  <label for="card_name">Cardholder name</label>
+                  <input class="card-input" type="text" id="card_name" name="card_name">
+                </div>
+              </div>
+              <div class="card-2">
+                <div></div>
+                <div>
+                  <label for="card_cvc">CVC/CVV</label>
+                  <input class="card-input" type="text" id="card_cvc" name="card_cvc">
+                  <p>The last 
+                    3 or 4 digits
+                    on back
+                    of the card</p>
+                </div>
+              </div>
+              <button class="btn-book">Book</button>
+            </form>
           </div>
            
         </div>

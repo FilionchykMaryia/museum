@@ -1,5 +1,5 @@
 .video-section {
-  padding: 90px 0 60px;
+  padding: 90px 0 76px;
   .container {
     position: relative;
   }
@@ -34,6 +34,12 @@
       justify-content: space-between;
       gap: 20px;
     }
+    .slick-slide{
+      video {
+        width: 452px;
+        height: 254px;
+      }
+    }
     /* Стрелка */
     .slick-arrow{
       position: absolute;
@@ -58,6 +64,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      padding-top: 27px;
     }
     .slick-dots li{
       margin: 0 10px;
@@ -85,13 +92,20 @@
 
 .video-slider {
   position: relative;
-  max-width: 1440px;
-  .play-btn {
+  max-width: 100%;
+  .big-play-btn {
     width: 220px;
     height: 220px;
     position: absolute;
     top: 35%;
     left: 45%;
+    background-color: transparent;
+    background-image: url(../assets/svg/button-bg-play.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    &:hover {
+      opacity: 0.5;
+    }
   }
   /* Ограничивающая оболочка */
   .slick-list {
@@ -116,18 +130,41 @@
     .play-button {
       width: 23px;
       height: 31px;
+      background-color: transparent;
+      background-image: url(../assets/svg/play.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      &:hover {
+        opacity: 0.5;
+      }
     }
     .volume-button {
       width: 38px;
       height: 31px;
+      background-color: transparent;
+      background-image: url(../assets/svg/volume.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      &:hover {
+        opacity: 0.5;
+      }
+    } 
+    .muted {
+      background-image: url(../assets/svg/mute.svg);
     }
-  
     .fullscr-button {
       width: 35px;
       height: 35px;
+      background-color: transparent;
+      background-image: url(../assets/svg/fullscreen.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      &:hover {
+        opacity: 0.5;
+      }
     }
     .progress {
-      background: linear-gradient(to right, $red 0%, $red 40%, $grey 40%,$grey 100%);
+      background: $grey;
       height: 8px;
       width: 929px;
       outline: none;
@@ -135,6 +172,26 @@
       -webkit-appearance: none;
     }
     
+    .progress-vol {
+      background:  linear-gradient(to right, $red 0%, $red 30%, $grey 30%, $grey 100%);
+      height: 8px;
+      width: 155px;
+      outline: none;
+      transition: background 450ms ease-in;
+      -webkit-appearance: none;
+    }
+
+    // input[type=range]:focus {
+    //   outline: none;
+    // }
+    // input[type=range]::-webkit-slider-thumb {
+    //   width: 15px;
+    //   height: 15px;
+    //   border-radius: 50px;
+    //   -webkit-appearance: none;
+    //   cursor: pointer;
+    //   background: $light;
+    // }
     .progress::-webkit-slider-thumb {
       width: 15px;
       height: 15px;
@@ -143,16 +200,6 @@
       cursor: pointer;
       background: $light;
     }
-    
-    .progress-vol {
-      background: linear-gradient(to right, $red 0%, $red 40%, $grey 40%,$grey 100%);
-      height: 8px;
-      width: 155px;
-      outline: none;
-      transition: background 450ms ease-in;
-      -webkit-appearance: none;
-    }
-    
     .progress-vol::-webkit-slider-thumb {
       width: 15px;
       height: 15px;
@@ -161,6 +208,44 @@
       cursor: pointer;
       background: $light;
     }
+    // input[type=range]::-webkit-slider-runnable-track {
+    //   width: 100%;
+    //   height: 8.4px;
+    //   cursor: pointer;
+    //   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
+    //   background: rgba(255,255,255,0.8);
+    //   border-radius: 1.3px;
+    //   border: 0.2px solid rgba(1, 1, 1, 0);
+    // }
+    // input[type=range]::-webkit-slider-thumb {
+    //   height: 15px;
+    //   width: 15px;
+    //   border-radius: 50px;
+    //   background: $light;
+    //   cursor: pointer;
+    //   -webkit-appearance: none;
+    //   margin-top: -3.5px;
+    //   box-shadow:0 0 2px rgba(0,0,0,0.2);
+    // }
+    
+    // input[type=range]::-moz-range-track {
+    //   width: 100%;
+    //   height: 8.4px;
+    //   cursor: pointer;
+    //   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
+    //   background: #ffffff;
+    //   border-radius: 1.3px;
+    //   border: 0.2px solid rgba(1, 1, 1, 0);
+    // }
+    
+    // input[type=range]::-moz-range-thumb {
+    //   box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(13, 13, 13, 0);
+    //   height: 15px;
+    //   width: 15px;
+    //   border-radius: 50px;
+    //   background: #ffc600;
+    //   cursor: pointer;
+    // }
   }
 }
 
