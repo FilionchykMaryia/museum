@@ -1,0 +1,22 @@
+$dark: #030303;
+$owerlay: rgba(0, 0, 0, 0.8);
+$red: #710707;
+$gold: #9d8665;
+$light: #FFFFFF;
+$grey: #999999;
+
+$fs-1: 80px;
+$fs-2: 32px;
+$fs-3: 28px;
+$fs-4: 22px;
+$fs-5: 18px;
+
+$title: 'Forum', cursive;
+$text: 'Roboto', sans-serif;
+
+@mixin text-hover {
+  color: $gold;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+

@@ -1,0 +1,38 @@
+.gallery-section {
+  padding-top: 75px;
+  .picture-container {
+    position: relative;
+    width: 1440px;
+    height: 2037px;
+    padding-top: 50px;
+    overflow-y: hidden;
+    &::before {
+      content: '';
+      background-image: url(../assets/img/shadow.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 0;
+      z-index: 6;
+      width: 1440px;
+      height: 360px;
+
+    }   
+  }
+  .picture-inner-container {
+    columns: 3 456px;
+    column-gap: 36px;
+    column-fill: balance;
+
+    img {
+      width: 456px;
+      padding-top: 24px;
+      &:nth-child(1) {
+        padding-top: 50px;
+      }
+      &:nth-child(11) {
+        padding-top: 50px;
+      }   
+              
+    }
+  }
+} 

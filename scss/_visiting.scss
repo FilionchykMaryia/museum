@@ -1,0 +1,39 @@
+.visiting-section {
+  padding: 59px 0 0 0;
+  .visiting-wrapper {
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 75px 60px;
+    padding: 104px 0 75px 0;
+  }
+  .card {
+    max-width: 440px;
+    max-height: 424px;
+    // padding: 103px 0;
+    section {
+      padding: 20px 0;
+      .p-1 {
+        padding: 22px 0 10px 0;
+        font-family: $text;
+        color: $dark;
+        font-weight: 200;
+        font-size: $fs-4;
+        line-height: 26px;
+      }
+      .p-2 {
+        font-family: $text;
+        color: $dark;
+        font-weight: 200;
+        font-size: $fs-5;
+        line-height: 21px;
+      }
+    }
+    img {
+      width: 440px;
+      height: 285px;
+    }
+  }
+}

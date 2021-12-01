@@ -1,0 +1,31 @@
+.header {
+  color: $light;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  background-color: $dark;
+}
+.header-nav {
+  min-width: 830px;
+  ul {
+    display: flex;
+    flex-direction: row;
+    max-width: 720px;
+    li {
+      list-style-type: none;
+      padding-left: 55px;
+      color: $light;
+      font-family: $text;
+      font-weight: 200;
+      font-size: $fs-4;
+      line-height: 150px;
+      letter-spacing: 2px;
+      &:hover{
+        @include text-hover;
+      }
+    }
+  }
+}

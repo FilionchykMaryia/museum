@@ -1,0 +1,32 @@
+.contacts-section {
+  .container {
+    padding: 75px 0 0 0;
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 75px 0;
+      .contacts-item {
+        padding-top: 27px;
+      }
+      h5 {
+        width: 227px;
+      }
+      p {
+        padding-top: 37px;
+        font-weight: 300;
+        font-size: $fs-4;
+        line-height: 26px;
+        color: $dark;
+      }
+      .map {
+        width: 960px;
+        height: 620px;
+        background-image: url(../assets/img/map.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    
+  }
+}

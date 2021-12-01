@@ -1,0 +1,202 @@
+.popup {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: $owerlay;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+  &:target .popup_content {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  &_body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &_area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  &_content {
+    position: relative;
+    background-color: $light;
+    color: $dark;
+    max-width: 970px;
+    padding: 91px 235px;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(-100%, 0px);
+  }
+  &_close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 25px;
+    height: 25px;
+  }
+  &_title {
+    width: 100%;
+    .logo {
+      width: 85px;
+      height: 43px;
+      background-image: url(../assets/svg/popup/logo.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    h6 {
+      font-family: $title;
+      font-size: 50px;
+      line-height: 55px;
+      text-transform: uppercase;
+      color: $gold;
+    }
+    p {
+      position: relative;
+      font-family: $text;
+      font-size: $fs-5;
+      line-height: 21px;
+      padding-top: 15px;
+      color: $red;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        height: 3px;
+        width: 100%;
+        background-color: $red;
+      }
+    }
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    .item {
+      &:nth-child(1) {
+        width: 400px;
+      }
+      &:nth-child(2) {
+        width: 530px;
+        img {
+          width: 100%;
+          height: 92%;
+        }
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 60px 0;
+      
+      .input-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 13px 15px;
+        width: 100%;
+        border: 1px solid $dark;
+        &:nth-child(1),
+        &:nth-child(2) {
+          width: 190px;
+        }
+        &:nth-child(7) {
+          flex-direction: column;
+        }
+        &-entry {
+          display: flex;
+          flex-direction: column;
+          padding: 13px 15px;
+          width: 100%;
+          border: 1px solid $dark;
+
+        }
+        .field {
+          width: 61%;
+        }
+        input {
+          width: 100%;
+          border: none;
+        }
+        select {
+          width: 108%;
+          border: none;
+        }
+        input[type=date],
+        input[type=time] {
+          opacity: 0;
+        }
+        .arrow {
+          margin-left: -30px;
+        }
+        p {
+          display: block;
+          padding: 0 15px;
+        }
+        div {
+          &:nth-child(1) {
+            padding: 0 15px;
+          }
+        }
+      }
+      .input-num {
+        display: flex;
+        width: 105px;
+        height: 26px;
+        text-align: center;
+        align-content: center;
+        border: 1px solid $dark;
+        text-align: center;
+        input {
+          width: 33px;
+          font-weight: 300;
+          font-size: $fs-5;
+          line-height: 25px;
+          text-align: center;
+        }
+        button {
+          background-color: $dark;
+          font-family: $text;
+          font-size: $fs-5;
+          line-height: 0;
+          text-align: center;
+          color: $light;
+          width: 35px;
+          height: 25px;
+        }
+      }
+      .number {
+        all: unset;
+        width: 3em;
+        text-align: center;
+      }
+      .entry-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 18px;
+      }
+    }
+  }
+  
+}

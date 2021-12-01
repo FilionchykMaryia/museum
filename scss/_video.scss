@@ -1,0 +1,167 @@
+.video-section {
+  padding: 90px 0 60px;
+  .container {
+    position: relative;
+  }
+  .video-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
+    padding-bottom: 75px;
+    h2 {
+      max-width: 606px;
+    }
+    p {
+      max-width: 717px;
+    }
+  }
+  video {
+    width: 100%;
+  }
+  .video-sm-slider {
+    padding-top: 44px;
+    /* Ограничивающая оболочка */
+    .slick-list {
+      overflow: hidden;
+      padding-bottom: 28px;
+    }
+    /* Лента слайдов */
+    .slick-track{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    /* Стрелка */
+    .slick-arrow{
+      position: absolute;
+      bottom: 0;
+      z-index: 10;
+      font-size: 0;
+      width: 10px;
+      height: 12px; 
+    }
+    /* Стрелка влево */
+    .slick-arrow.slick-prev{
+      left: 43%;
+      background: url('../assets/svg/arrow-l-grey.svg') 0 0 / 100% no-repeat;
+    }
+    /* Стрелка вправо */
+    .slick-arrow.slick-next{
+      right: 43%;
+      background: url('../assets/svg/arrow-r-grey.svg') 0 0 / 100% no-repeat;
+    }
+    /* Точки (булиты) */
+    .slick-dots{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slick-dots li{
+      margin: 0 10px;
+    }
+    /* Активная точка */
+    .slick-dots li.slick-active button {
+      background-color: $red;
+    }
+    /* Элемент точки */
+    .slick-dots li button{
+      font-size: 0;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: $grey;
+      &:hover {
+        background-color: $red;
+      }
+      &:focus {
+        background-color: $red;
+      }
+    }
+  }
+}
+
+.video-slider {
+  position: relative;
+  max-width: 1440px;
+  .play-btn {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: 35%;
+    left: 45%;
+  }
+  /* Ограничивающая оболочка */
+  .slick-list {
+    overflow: hidden;
+  }
+  /* Лента слайдов */
+  .slick-track{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .video-controls {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: $dark;
+    gap: 50px;
+    padding: 25px;
+    .play-button {
+      width: 23px;
+      height: 31px;
+    }
+    .volume-button {
+      width: 38px;
+      height: 31px;
+    }
+  
+    .fullscr-button {
+      width: 35px;
+      height: 35px;
+    }
+    .progress {
+      background: linear-gradient(to right, $red 0%, $red 40%, $grey 40%,$grey 100%);
+      height: 8px;
+      width: 929px;
+      outline: none;
+      transition: background 450ms ease-in;
+      -webkit-appearance: none;
+    }
+    
+    .progress::-webkit-slider-thumb {
+      width: 15px;
+      height: 15px;
+      border-radius: 50px;
+      -webkit-appearance: none;
+      cursor: pointer;
+      background: $light;
+    }
+    
+    .progress-vol {
+      background: linear-gradient(to right, $red 0%, $red 40%, $grey 40%,$grey 100%);
+      height: 8px;
+      width: 155px;
+      outline: none;
+      transition: background 450ms ease-in;
+      -webkit-appearance: none;
+    }
+    
+    .progress-vol::-webkit-slider-thumb {
+      width: 15px;
+      height: 15px;
+      border-radius: 50px;
+      -webkit-appearance: none;
+      cursor: pointer;
+      background: $light;
+    }
+  }
+}
+
+
